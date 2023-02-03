@@ -11,30 +11,14 @@ const LayoutWrapper = ({ children }) => {
   return (
     <SectionContainer>
       <div className="flex h-screen flex-col justify-between">
-        <header className="flex items-center justify-between py-10">
-          <div>
-            <Link href="/" aria-label={siteMetadata.headerTitle}>
-              <div className="flex items-center justify-between">
-                <div className="mr-3">
-                  <Logo />
-                </div>
-                {typeof siteMetadata.headerTitle === 'string' ? (
-                  <div className="hidden h-6 text-2xl font-semibold sm:block">
-                    {siteMetadata.headerTitle}
-                  </div>
-                ) : (
-                  siteMetadata.headerTitle
-                )}
-              </div>
-            </Link>
-          </div>
-          <div className="flex items-center text-base leading-5">
-            <div className="hidden sm:block">
+        <header className="mx-auto flex w-full max-w-md items-center justify-between px-4 sm:px-4 sm:py-2 md:max-w-3xl md:px-0 xl:max-w-2xl xl:px-0">
+          <div className="mt-5 flex w-full items-center justify-between text-base leading-5">
+            <div className="hidden text-lg sm:block sm:space-x-8">
               {headerNavLinks.map((link) => (
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+                  className="mt-0 rounded-lg p-1 font-medium text-gray-500 transition-all hover:scale-125 hover:bg-blue-200 hover:text-black dark:text-gray-400  dark:hover:bg-blue-800 dark:hover:text-white sm:px-3 sm:py-2 md:inline-block"
                 >
                   {link.title}
                 </Link>
