@@ -3,6 +3,7 @@ import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import Typed from '@/components/typed.js'
 import siteMetadata from '@/data/siteMetadata'
+import NowPlaying from '@/components/playing'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 
@@ -37,6 +38,11 @@ export default function Home({ posts }) {
             <Typed /> <br></br>
             {siteMetadata.description}
           </p>
+          <div className="md border-4 border-double border-gray-500 p-4 md:w-80">
+            <p className="font-mono font-bold text-orange-700 dark:text-orange-600">
+              <NowPlaying />
+            </p>
+          </div>
         </div>
         <ul className="divide-y divide-cyan-500 dark:divide-cyan-700">
           {!posts.length && 'No posts found.'}
