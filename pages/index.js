@@ -38,9 +38,11 @@ export default function Home({ posts }) {
             <Typed /> <br></br>
             {siteMetadata.description}
           </p>
-          <p className="border-4 border-double border-gray-500 p-4 font-mono font-bold text-orange-700 dark:text-orange-600 md:w-80">
-            <NowPlaying />
-          </p>
+          <div className="border-4 border-double border-gray-500 p-4 md:w-80">
+            <p className=" font-mono font-bold text-orange-700 dark:text-orange-600">
+              <NowPlaying />
+            </p>
+          </div>
         </div>
         <ul className="divide-y divide-cyan-500 dark:divide-cyan-700">
           {!posts.length && 'No posts found.'}
