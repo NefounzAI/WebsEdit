@@ -25,7 +25,7 @@ export default function Home({ posts }) {
         <div className="space-y-2 pt-6 pb-8 md:space-y-5">
           <div
             className="animate-text bg-gradient-to-r 
-            from-[#6EE7B7] via-[#3B82F6]  to-[#9333EA]
+            from-[#ec24dc] via-[#23c61a]  to-[#0d86ab]
             bg-clip-text
             text-transparent
             "
