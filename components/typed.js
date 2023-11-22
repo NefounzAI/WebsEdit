@@ -19,9 +19,8 @@ export default function TypedBios() {
     <>
       <ul id="bios" className="hidden">
         <li>I live in indonesia</li>
-        <li>I love Music</li>
-        <li>And i I Love Anime</li>
-        <li>I love seafood, which is one of shrimp and fish</li>
+        <li>I Like Music</li>
+        <li>And I Like Anime</li>
       </ul>
       <span ref={el} className="text-lg text-neutral-900 dark:text-neutral-200" />
     </>

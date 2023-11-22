@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'MdRifqii_',
   headerTitle: 'My Website',
   description:
-    'I started learning to code in 2020 and have been hooked ever since. I created my minecraft server whose name was Drrekor Network, and now it has changed to Hexnity Network. I started selling digital products in 2022 and it lasted 3 months',
+    'Saya mulai tertarik pada programming sejak 2020 dan tinggal di Bengkulu, Indonesia. Saya menyukai anime dan musik. Keahlian pemrograman saya melibatkan PHP dan JavaScript, dengan preferensi lebih ke arah pengembangan backend.',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: '/',
