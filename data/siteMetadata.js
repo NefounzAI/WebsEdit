@@ -3,7 +3,7 @@ const siteMetadata = {
   author: 'MdRifqii_',
   headerTitle: 'My Website',
   description:
-    'Saya mulai tertarik pada programming sejak 2020 dan tinggal di Bengkulu, Indonesia. Saya menyukai anime dan musik. Keahlian pemrograman saya melibatkan PHP dan JavaScript, dengan preferensi lebih ke arah pengembangan backend.',
+    'Halo! Nama saya Rifqi, dan saya mulai menjelajahi dunia pemrograman sejak tahun 2020. Saat ini, saya tinggal di Bengkulu, Indonesia, dan sedang menempuh pendidikan di sekolah menengah kejuruan (SMK). Saya memiliki minat khusus dalam pengembangan backend, terutama dengan menggunakan PHP dan JavaScript, yang memungkinkan saya untuk menciptakan aplikasi web yang dinamis dan efisien.Di luar dunia pemrograman, saya suka menikmati anime dan mendengarkan musik, yang sering kali menginspirasi proses kreatif saya. Saya sangat bersemangat untuk terus mengembangkan keterampilan dan pengetahuan saya di bidang teknologi!',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: '/',

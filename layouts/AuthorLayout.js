@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
+import { PageSEO } from '@/components/SEO'
 import SocialIcon from '@/components/social-icons'
 import Image from '@/components/Image'
-import { PageSEO } from '@/components/SEO'
 
 export default function AuthorLayout({ children, frontMatter }) {
   const { name, avatar, occupation, company, email, twitter, linkedin, github } = frontMatter
@@ -9,22 +9,22 @@ export default function AuthorLayout({ children, frontMatter }) {
   return (
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
-      <div className="bg-gradient-to-r from-white via-blue-600 to-white py-12 dark:bg-black dark:from-black dark:via-blue-600 dark:to-black">
-        <div className="container mx-auto flex flex-col items-center justify-center space-y-8 md:flex-row md:space-y-0">
-          <div className="flex-shrink-0 md:mr-8">
+      <main className="bg-gradient-to-br from-indigo-600 to-purple-800 py-16 dark:bg-gray-900">
+        <div className="container mx-auto flex flex-col md:flex-row md:items-center md:space-x-10">
+          <div className="mb-6 flex-shrink-0 md:mb-0 md:w-1/4">
             <Image
               src={avatar}
-              alt="avatar"
-              width="192px"
-              height="192px"
-              className="h-48 w-48 rounded-full border-4 border-white dark:border-gray-800"
+              alt={`${name}'s profile picture`}
+              width={200}
+              height={200}
+              className="transform rounded-full border-4 border-white shadow-lg transition-transform duration-300 hover:scale-110 dark:border-gray-800"
             />
           </div>
-          <div className="text-center md:text-left">
-            <h3 className="text-4xl font-bold leading-10 text-white dark:text-gray-100">{name}</h3>
-            <div className="text-xl text-black dark:text-black">{occupation}</div>
-            <div className="text-lg text-black">{company}</div>
-            <div className="flex justify-center space-x-3 pt-6 md:justify-start">
+          <div className="text-center md:w-3/4 md:text-left">
+            <h1 className="text-4xl font-extrabold text-white dark:text-gray-100">{name}</h1>
+            <h2 className="text-xl text-gray-300 dark:text-gray-400">{occupation}</h2>
+            <p className="mb-4 text-lg text-gray-200 dark:text-gray-500">{company}</p>
+            <div className="flex justify-center space-x-5 md:justify-start">
               <SocialIcon kind="mail" href={`mailto:${email}`} />
               <SocialIcon kind="github" href={github} />
               <SocialIcon kind="linkedin" href={linkedin} />
@@ -32,10 +32,10 @@ export default function AuthorLayout({ children, frontMatter }) {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container prose prose-lg mx-auto mt-8 text-black dark:prose-dark">
+      </main>
+      <section className="container prose prose-lg mx-auto mt-10 text-gray-900 dark:prose-dark">
         {children}
-      </div>
+      </section>
     </>
   )
 }
