@@ -41,7 +41,7 @@ export default function Home({ posts }) {
               bg-clip-text text-transparent"
             >
               <h1 className="tracking-tightest my-28 select-none text-7xl font-extrabold leading-none sm:my-10 sm:text-6xl">
-                Zyii.Rifqii
+                Zyiii.Rifqi
               </h1>
             </div>
             <p className="text-lg leading-7 text-gray-800 dark:text-gray-200">
